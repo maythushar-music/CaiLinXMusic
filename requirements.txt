@@ -1,4 +1,4 @@
-telethon==1.33.1
+telethon==1.38.1
 aiofiles
 apscheduler
 aiohttp==3.9.3
