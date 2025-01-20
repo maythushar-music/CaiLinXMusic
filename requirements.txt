@@ -4,7 +4,7 @@ apscheduler
 aiohttp==3.9.3
 asyncio==3.4.3
 gTTS
-dnspython==2.3.0
+dnspython==2.7.0
 hachoir
 heroku3
 motor
