@@ -51,13 +51,13 @@ async def settings_mar(client, message: Message, _):
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
-@app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ᴍʏ_ꜱᴛᴏʀʏ") & ~BANNED_USERS)
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
-        InputMediaVideo("https://files.catbox.moe/n2xvvf.mp4"),
+        InputMediaVideo("https://files.catbox.moe/7ygwo6.mp4"),
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="နောက်သို့ပြန်သွားရန်", callback_data=f"settingsback_helper")]]
+            [[InlineKeyboardButton(text="˹ ßᴀᴄᴋ ˼", callback_data=f"settingsback_helper")]]
         ),
     )
 
@@ -91,12 +91,11 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         await app.resolve_peer(OWNER_ID)
         OWNER = OWNER_ID
         buttons = private_panel(_)
-        UP, CPU, RAM, DISK = await bot_sys_stats()
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
                 media=START_IMG_URL,
                 caption=_["start_2"].format(
-                    CallbackQuery.from_user.first_name, app.mention, UP, DISK, CPU, RAM),
+                    CallbackQuery.from_user.first_name, app.mention),
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
