@@ -9,11 +9,11 @@ class BUTTONS(object):
     InlineKeyboardButton("Aᴄᴛɪᴏɴ", callback_data="mplus HELP_Action"),InlineKeyboardButton("Sᴇᴀʀᴄʜ", callback_data="mplus HELP_Search")],    
     [InlineKeyboardButton("ғᴏɴᴛ", callback_data="mplus HELP_Font"),
     InlineKeyboardButton("Bᴏᴛs", callback_data="mplus HELP_Bots"),InlineKeyboardButton("Ⓣ-ɢʀᴀᴘʜ", callback_data="mplus HELP_TG")],
-    [InlineKeyboardButton("Sᴏᴜʀᴄᴇ", callback_data="mplus HELP_Source"),
+    [InlineKeyboardButton("ʙᴀɴ", callback_data="mplus HELP_Ban"),
     InlineKeyboardButton("Tʀᴜᴛʜ-ᗪᴀʀᴇ", callback_data="mplus HELP_TD"),InlineKeyboardButton("Qᴜɪᴢ", callback_data="mplus HELP_Quiz")], 
     [InlineKeyboardButton("ᴛᴛs", callback_data="mplus HELP_TTS"),
     InlineKeyboardButton("Rᴀᴅɪᴏ", callback_data="mplus HELP_Radio"),InlineKeyboardButton("ǫᴜᴏᴛʟʏ", callback_data="mplus HELP_Q")],          
     [InlineKeyboardButton("◁", callback_data=f"settings_back_helper"),
-     InlineKeyboardButton("↻ ʙᴀᴄᴋ ↻", callback_data=f"mbot_cb"), 
+     InlineKeyboardButton("↻ ʙᴀᴄᴋ ↻", callback_data=f"settingsback_helper"), 
     InlineKeyboardButton("▷", callback_data=f"managebot123 settings_back_helper"),
     ]]
