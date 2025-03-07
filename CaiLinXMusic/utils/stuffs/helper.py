@@ -96,33 +96,16 @@ Aᴄᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅꜱ:
  ❍ /kickme: kicks the user who issued the command
 
 Admins only:
-❍ /ban - Ban A User
-❍ /banall - Ban All Users
-❍ /sban - Delete all messages of user that sended in group and ban the user
-❍ /tban - Ban A User For Specific Time
-❍ /unban - Unban A User
-❍ /warn - Warn A User
-❍ /swarn - Delete all the message sended in group and warn the user
-❍ /rmwarns - Remove All Warning of A User
-❍ /warns - Show Warning Of A User
-❍ /kick - Kick A User
-❍ /skick - Delete the replied message kicking its sender
-❍ /purge - Purge Messages
-❍ /purge [n] - Purge "n" number of messages from replied message
-❍ /del - Delete Replied Message
-❍ /promote - Promote A Member
-❍ /fullpromote - Promote A Member With All Rights
-❍ /demote - Demote A Member
-❍ /pin - Pin A Message
-❍ /unpin - unpin a message
-❍ /unpinall - unpinall messages
-❍ /mute - Mute A User
-❍ /tmute - Mute A User For Specific Time
-❍ /unmute - Unmute A User
-❍ /zombies - Ban Deleted Accounts
-❍ /report | @admins | @admin - Report A Message To Admins
+ ❍ /ban <userhandle>: bans a user. (via handle, or reply)
+ ❍ /sban <userhandle>: Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+ ❍ /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+ ❍ /unban <userhandle>: unbans a user. (via handle, or reply)
+ ❍ /kick <userhandle>: kicks a user out of the group, (via handle, or reply)
+ ❍ /mute <userhandle>: silences a user. Can also be used as a reply, muting the replied to user.
+ ❍ /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+ ❍ /unmute <userhandle>: unmutes a user. Can also be used as a reply, muting the replied to user.
 __
-𝐒ᴘᴇᴄɪᴀʟ 𝐂ᴏᴍᴍᴀɴᴅs 𝐒ᴜᴘᴘᴏʀᴛ 𝐀ʟʟ 𝐄xᴀᴍᴘʟᴇ  - Sαʂυƙҽ Ⴆαɳ Sαʂυƙҽ ɱυƚҽ Sαʂυƙҽ ρɾσɱσƚҽ ..... 𝚎𝚝𝚌
+𝐒ᴘᴇᴄɪᴀʟ 𝐂ᴏᴍᴍᴀɴᴅs 𝐒ᴜᴘᴘᴏʀᴛ 𝐀ʟʟ 𝐄xᴀᴍᴘʟᴇ  - Bɾαɳԃҽԃ  Ⴆαɳ Ⴆɾαɳԃҽԃ ɱυƚҽ Ⴆɾαɳԃҽԃ ρɾσɱσƚҽ ..... 𝚎𝚝𝚌
 '''
     HELP_Search = '''Sᴇᴀʀᴄʜ
 
@@ -161,21 +144,43 @@ Example:
 ◌ /tgm [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
 ◌ /tgt [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
 '''
-    HELP_Source = '''Sᴏᴜʀᴄᴇ
+    HELP_Ban = '''ʙᴀɴ
 
-Tʜɪs ᴍᴏᴅᴜᴇ ᴘʀᴏᴠɪᴅᴇs ᴜᴛɪɪᴛʏ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴜsᴇʀs ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ.:
-
-Sᴏᴜʀᴄᴇ ᴍᴏᴅᴜʟᴇ:
-
-◌ /ʀᴇᴘᴏ : Gᴇᴛ ᴛʜᴇ ɪɴᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ's sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.
+/ban - ʙᴀɴ ᴀ ᴜꜱᴇʀ
+/banall - ʙᴀɴ ᴀʟʟ ᴜꜱᴇʀꜱ
+/sban - ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇꜱ ᴏꜰ ᴜꜱᴇʀ ᴛʜᴀᴛ ꜱᴇɴᴅᴇᴅ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀ.
+/tban - ʙᴀɴ ᴀ ᴜꜱᴇʀ ꜰᴏʀ ꜱᴘᴇᴄɪꜰɪᴄ ᴛɪᴍᴇ
+/unban - ᴜɴʙᴀɴ ᴀ ᴜꜱᴇʀ
+/warn - ᴡᴀʀɴ ᴀ ᴜꜱᴇʀ
+/swarn - ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ꜱᴇɴᴅᴇᴅ ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴡᴀʀɴ ᴛʜᴇ ᴜꜱᴇʀ
+/rmwarns - ʀᴇᴍᴏᴠᴇ ᴀʟʟ ᴡᴀʀɴɪɴɢ ᴏꜰ ᴀ ᴜꜱᴇʀ
+/warns - ꜱʜᴏᴡ ᴡᴀʀɴɪɴɢ ᴏꜰ ᴀ ᴜꜱᴇʀ
+/kick - ᴋɪᴄᴋ ᴀ ᴜꜱᴇʀ
+/skick - ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ ᴋɪᴄᴋɪɴɢ ɪᴛꜱ ꜱᴇɴᴅᴇʀ
+/purge - ᴘᴜʀɢᴇ ᴍᴇꜱꜱᴀɢᴇꜱ
+/purge [n] - ᴘᴜʀɢᴇ "ɴ" ɴᴜᴍʙᴇʀ ᴏꜰ ᴍᴇꜱꜱᴀɢᴇꜱ ꜰʀᴏᴍ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ
+/del - ᴅᴇʟᴇᴛᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ
+/promote - ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ
+/fullpromote - ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ ᴡɪᴛʜ ᴀʟʟ ʀɪɢʜᴛꜱ
+/demote - ᴅᴇᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ
+/pin - ᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ
+/unpin - ᴜɴᴘɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ
+/unpinall - ᴜɴᴘɪɴᴀʟʟ ᴍᴇꜱꜱᴀɢᴇꜱ
+/mute - ᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ
+/tmute - ᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ ꜰᴏʀ ꜱᴘᴇᴄɪꜰɪᴄ ᴛɪᴍᴇ
+/unmute - ᴜɴᴍᴜᴛᴇ ᴀ ᴜꜱᴇʀ
+/zombies - ʙᴀɴ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛꜱ
+/report | @admins | @admin - ʀᴇᴘᴏʀᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀᴅᴍɪɴꜱ."""/ | @admins | @admin - ʀᴇᴘᴏʀᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀᴅᴍɪɴꜱ.
 '''
+
+
     HELP_TD = '''Tʀᴜᴛʜ-ᗪᴀʀᴇ
 
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Tʀᴜᴛʜ-ᗪᴀʀᴇ ᴍᴏᴅᴜʟᴇ:
 
 ᴛʀᴜᴛʜ ᴀɴᴅ ᴅᴀʀᴇ
 ◌ /truth : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴛʀᴜᴛʜ sᴛʀɪɴɢ.
-◌ /dare : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴅᴀʀᴇ sᴛʀɪɴɢ.
+◌ /dare : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴅᴀʀᴇreport sᴛʀɪɴɢ.
 '''
     HELP_Quiz = '''Qᴜɪᴢ
 
